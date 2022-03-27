@@ -31,5 +31,3 @@ elif a>700:
     i=round(i,2)
     print("夏月總金額"+str(h)+"元")
     print("非夏月總金額"+str(i)+"元")
-    
-
