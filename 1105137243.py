@@ -1,0 +1,24 @@
+#分期償還表(本金平均攤還法)
+a1=int(input("借款總額"))#$7,000,000
+i=int(input("期數"))#240(20*12)
+a2=float(input("利率"))#0.018(1.8%)
+a=int(a1)#期初金額
+e=int(a1)#期末
+b=0#每期支付額
+c=0#利息費用
+d=round(a1/i)#本金償還
+for j in range(i-1):
+    a=e
+    c=round(a*a2/12)
+    b=c+d
+    e=a-d
+    print("期初金額",a,"元")
+    print("每期支付額",b,"元")
+    print("利息費用",c,"元")
+    print("本金償還",d,"元")
+    print("期末金額",e,"元")
+print("期初金額",e,"元")
+print("每期支付額",b,"元")
+print("利息費用",e-d,"元")
+print("本金償還",d,"元")
+print("期末金額",e-e,"元")
